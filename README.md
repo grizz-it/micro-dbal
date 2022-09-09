@@ -54,7 +54,7 @@ ConnectionManager::getConnection('master');
 In the `migrations` directory, create a folder with the same name as the
 configured connection required for the migration. Then add the migrations
 anywhere inside that folder. Let the migration implement the interface
-`App\Migration\MigrationInterface`.
+`GrizzIt\MicroDbal\Migration\MigrationInterface`.
 
 The name of the file should always contain the date prefix:
 `YYYY_MM_DD_HH_mm_SS_`. This part will be used for sorting the migrations.
