@@ -68,6 +68,27 @@ unique.
 The `migrations` subdirectory is a reserved for running migrations that should
 be run for every connection.
 
+### Running migrations
+Migrations can be run with the following snippet:
+```php
+<?php
+
+use GrizzIt\MicroDbal\Migration\MigrationManager;
+
+MigrationManager::runMigrations();
+```
+This will run all migrations (that have not been run) for all connections.
+
+### Reverting migrations
+To revert a migration, use the following snippet:
+```php
+<?php
+
+use GrizzIt\MicroDbal\Migration\MigrationManager;
+
+MigrationManager::revertMigration('2022_01_01_10_00_00_create_migrations_table.php');
+```
+
 ## MIT License
 
 Copyright (c) GrizzIT
