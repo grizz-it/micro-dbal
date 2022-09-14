@@ -23,7 +23,7 @@ class MigrationManager
     private static array $migrationsRun = [];
 
     private static array $migrationsDirectories = [
-        __DIR__ . '/../../migrations'
+        __DIR__ . '/../../migrations/'
     ];
 
     /**
